@@ -1,7 +1,7 @@
 const admin = require('firebase-admin');
 const { getFirestore, FieldValue } = require('firebase-admin/firestore');
 const { getAuth } = require('firebase-admin/auth');
-const serviceAccount = require('../task-manager-635f4-firebase-adminsdk-fbsvc-e869044aef.json');
+const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 
 const app = admin.initializeApp({
   credential: admin.cert(serviceAccount),
