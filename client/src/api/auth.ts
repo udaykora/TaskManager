@@ -2,7 +2,7 @@ import axios from 'axios';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebase';
 
-const API_BASE_URL = 'http://localhost:5000/api/auth';
+const API_BASE_URL = 'https://taskmanager-y9xl.onrender.com/api/auth';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
