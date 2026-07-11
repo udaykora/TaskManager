@@ -3,7 +3,7 @@ const router = express.Router();
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const authMiddleware = require('../middleware/authMiddleware');
 
-const genAI = new GoogleGenerativeAI("AQ.Ab8RN6L0ImlfmUCge2HTl9rm0aFUciaYGJJV4KzwQEMs-sTb5w");
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 router.use(authMiddleware); 
 
