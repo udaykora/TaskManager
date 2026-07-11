@@ -24,7 +24,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   useEffect(() => {
     const checkSession = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/auth/me', {
+        const res = await axios.get('https://taskmanager-y9xl.onrender.com/api/auth/me', {
           withCredentials: true,
         });
         setUser(res.data);
@@ -39,7 +39,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const logout = async () => {
     await axios.post(
-      'http://localhost:5000/api/auth/logout',
+      'https://taskmanager-y9xl.onrender.com/api/auth/logout',
       {},
       { withCredentials: true }
     );
