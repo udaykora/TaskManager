@@ -18,7 +18,7 @@ const techStack = {
   Database: ['Firebase Firestore'],
   Authentication: ['Firebase Authentication', 'Firebase Admin SDK'],
   'AI Integration': ['Google Gemini API (gemini-2.5-flash)'],
-  Deployment: ['Firebase Hosting (Frontend)', 'Firebase Cloud Functions (Backend)'],
+  Deployment: ['Firebase Hosting (Frontend)', 'Render (Backend)'],
 };
 
 const features = [
