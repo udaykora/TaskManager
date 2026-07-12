@@ -45,7 +45,7 @@ const statusColor: Record<string, string> = {
 };
 
 const Dashboard: React.FC = () => {
-  const { user, logout } = useAuth();
+  const { logout } = useAuth();
   const [tasks, setTasks] = useState<Task[]>([]);
   const [loading, setLoading] = useState(true);
   const [modalOpen, setModalOpen] = useState(false);
@@ -172,7 +172,6 @@ const Dashboard: React.FC = () => {
           TASK MANAGER
         </Title>
         <Space>
-          <Text>Hi, {user?.name}</Text>
           <Button icon={<LogoutOutlined />} onClick={logout}>
             Logout
           </Button>
